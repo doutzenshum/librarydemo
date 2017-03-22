@@ -30,7 +30,7 @@ public class Liber extends BaseEquipment implements IEquCommand {
 	
 	@Override
 	public String ls() {
-		//为什么是没必要的代码
+		//这5行代码赋值相当于line60-65，但是没必要，因为cd的时候就已经赋值好了
 //		BaseEquipment[] equs = new JSONDaoImpl().listAll();
 //		rooms = new Room[equs.length];
 //		for(int i=0;i<equs.length;i++){
