@@ -64,7 +64,7 @@ public class BaseCommand {
 			if (!(rs==null) && !"".equals(rs)) {
 				System.out.println(rs);
 			}
-			params[0]=null;
+			params[0]=null;//这里如果不加的话cd ..后再次输入cd,还是会回退
 			break;
 //若是将以上退回上级目录的代码替换为以下代码，则cd..返回上级。但是bug贼jb多
 //		case "cd..":
